@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Farm</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="vegetable_item">Овощи</string>
+    <string name="fruit_item">Фрукты</string>
+    <string name="milk_item">Молочные продукты</string>
+    <string name="meat_item">Мясные продукты</string>
+    <string name="category_item">Категории товаров</string>
+    <string name="profile_item">Мой профиль</string>
+    <string name="my_page_item">Моя страница</string>
+    <string name="my_advt_item">Мои объявления</string>
+    <string name="all_item">Все категории</string>
+    <string name="my_favorites_item">Избранное</string>
+    <string name="main_toolbar_settings">Настройки</string>
+    <string name="activity_settings">Настройки</string>
+    <string name="transition_name_image">transaction:image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="search_address">введите адрес</string>
+
+
+</resources>

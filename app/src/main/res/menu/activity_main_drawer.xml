@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?> <!--Боковое меню с полями-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/category_item" >
+        <menu>
+            <item android:id="@+id/nav_all"
+                android:icon="@drawable/ic_action_all"
+                android:title="@string/all_item" />
+            <item android:id="@+id/nav_vegetables"
+                android:icon="@drawable/ic_action_vegetables"
+                android:title="@string/vegetable_item" />
+            <item android:id="@+id/nav_fruit"
+                android:icon="@drawable/ic_action_fruit"
+                android:title="@string/fruit_item" />
+            <item android:id="@+id/nav_milk"
+                android:icon="@drawable/ic_action_milk"
+                android:title="@string/milk_item" />
+            <item android:id="@+id/nav_meat"
+                android:icon="@drawable/ic_action_meat"
+                android:title="@string/meat_item" />
+        </menu>
+    </item>
+
+    <item android:title="@string/profile_item">
+        <menu>
+            <item android:id="@+id/nav_my_page"
+                android:icon="@drawable/ic_action_my_page"
+                android:title="@string/my_page_item" />
+            <item android:id="@+id/nav_my_advt"
+                android:icon="@drawable/ic_action_advt"
+                android:title="@string/my_advt_item" />
+            <item android:id="@+id/nav_my_favorites"
+                android:icon="@drawable/ic_action_favorites"
+                android:title="@string/my_favorites_item" />
+        </menu>
+    </item>
+
+</menu>

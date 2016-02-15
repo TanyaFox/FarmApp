@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/scrollView_set"
+    tools:context="ru.hse.farm.SettingsActivity"
+    tools:showIn="@layout/activity_settings"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:text="Режим просмотра объявлений"
+            android:id="@+id/textView_view_mode" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:text="Карта"
+            android:id="@+id/set_map_mode"
+            android:layout_below="@+id/textView_view_mode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:text="Список"
+            android:id="@+id/set_list_mode"
+            android:layout_below="@+id/set_map_mode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_list_mode"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:text="Сортировать по:"
+            android:id="@+id/textView_sort_mode" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:text="удаленности"
+            android:id="@+id/set_sort_distance"
+            android:layout_below="@+id/textView_sort_mode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:text="стоимости"
+            android:id="@+id/set_sort_cost"
+            android:layout_below="@+id/set_sort_distance"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:text="популярности"
+            android:id="@+id/set_sort_rate"
+            android:layout_below="@+id/set_sort_cost"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:text="дате публикации"
+            android:id="@+id/set_sort_date"
+            android:layout_below="@+id/set_sort_rate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_sort_date"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:text="Место поиска"
+            android:id="@+id/textView_search_mode" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:hint="@string/search_address"
+            android:textColor="@color/colorText"
+            android:ems="10"
+            android:id="@+id/search_address"
+            android:layout_below="@+id/textView_search_mode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_address"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:text="Искать в радиусе (км)"
+            android:id="@+id/textView_search_distance" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/colorText"
+            android:ems="10"
+            android:id="@+id/search_distance"
+            android:layout_below="@+id/textView_search_distance"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_distance"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:text="Стоимость товара (руб.)"
+            android:id="@+id/textView_search_cost" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView_search_cost"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linear_cost_param">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp"
+                android:text="от"
+                android:id="@+id/textView_from" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/colorText"
+                android:ems="10"
+                android:id="@+id/cost_from" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp"
+                android:text="до"
+                android:id="@+id/textView_to" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/colorText"
+                android:ems="10"
+                android:id="@+id/cost_to" />
+
+        </LinearLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:text="Ок"
+            android:layout_below="@+id/linear_cost_param"
+            android:id="@+id/button_ok"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

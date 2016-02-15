@@ -1,0 +1,11 @@
+<!--Стиль бокового меню-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <gradient
+        android:startColor="#08d340"
+        android:centerColor="#18bd37"
+        android:endColor="#2ea02b"
+        android:type="linear"
+        android:angle="135"/>
+</shape>
